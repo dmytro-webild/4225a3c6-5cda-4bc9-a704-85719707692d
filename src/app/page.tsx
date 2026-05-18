@@ -91,13 +91,13 @@ export default function LandingPage() {
       useInvertedBackground={true}
       features={[
         {
-          title: "General Dentistry",          description: "Preventive care, cleanings, and checkups to maintain your oral health.",          bentoComponent: { bentoComponent: "reveal-icon", icon: CheckCircle },
+          title: "General Dentistry",          description: "Preventive care, cleanings, and checkups to maintain your oral health.",          bentoComponent: { icon: CheckCircle },
           imageSrc: "http://img.b2bpic.net/free-vector/dental-design-concept_1284-4395.jpg",          imageAlt: "glowing tooth icon dental"},
         {
-          title: "Implants & Prosthetics",          description: "Comfortable, high-quality tooth replacements designed to feel natural.",          bentoComponent: { bentoComponent: "reveal-icon", icon: Sparkles },
+          title: "Implants & Prosthetics",          description: "Comfortable, high-quality tooth replacements designed to feel natural.",          bentoComponent: { icon: Sparkles },
           imageSrc: "http://img.b2bpic.net/free-photo/beauty-salon-treatment-room_181624-30807.jpg",          imageAlt: "glowing tooth icon dental"},
         {
-          title: "Endodontics",          description: "Expert treatment for deep infections and root canal care.",          bentoComponent: { bentoComponent: "reveal-icon", icon: Shield },
+          title: "Endodontics",          description: "Expert treatment for deep infections and root canal care.",          bentoComponent: { icon: Shield },
           imageSrc: "http://img.b2bpic.net/free-vector/dental-health-caries-teeth-healthcare-instruments-dent-protection-flat-icons-set-isolated-vector-illustration_1284-2950.jpg",          imageAlt: "glowing tooth icon dental"},
       ]}
       title="Comprehensive Dental Services"
