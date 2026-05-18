@@ -74,7 +74,7 @@ export default function LandingPage() {
         },
       ]}
       enableKpiAnimation={true}
-      imageSrc="http://img.b2bpic.net/free-photo/beauty-salon-treatment-room_181624-30807.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/beauty-salon-treatment-room_181624-30807.jpg?_wi=1"
       imageAlt="Modern dental clinic environment"
       mediaAnimation="slide-up"
       avatars={[
@@ -172,7 +172,7 @@ export default function LandingPage() {
             bentoComponent: "reveal-icon",
             icon: Sparkles,
           },
-          imageSrc: "http://img.b2bpic.net/free-photo/beauty-salon-treatment-room_181624-30807.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/beauty-salon-treatment-room_181624-30807.jpg?_wi=2",
           imageAlt: "glowing tooth icon dental",
         },
         {
