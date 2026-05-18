@@ -11,7 +11,7 @@ import HeroSplitKpi from '@/components/sections/hero/HeroSplitKpi';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
-import { Award, CheckCircle, Clock, Shield, ShieldCheck, Sparkles } from "lucide-react";
+import { Award, CheckCircle, Clock, Shield, Sparkles, ShieldCheck } from "lucide-react";
 
 export default function LandingPage() {
   return (
