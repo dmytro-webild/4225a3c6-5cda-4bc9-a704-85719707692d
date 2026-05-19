@@ -54,12 +54,12 @@ export default function LandingPage() {
               { value: "5.0", label: "Patient Rating" },
             ]}
             enableKpiAnimation={true}
-            imageSrc="http://img.b2bpic.net/free-photo/beauty-salon-treatment-room_181624-30807.jpg"
+            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Du4bEh9qbNp2VT2H1Cwwbz7STt/uploaded-1779173495008-44jvngde.jpg"
             imageAlt="Modern dental clinic environment"
             mediaAnimation="slide-up"
             avatars={[
-              { src: "http://img.b2bpic.net/free-photo/smiling-medical-team-standing-together-hospital-corridor_107420-84830.jpg", alt: "Medical staff smiling" },
-              { src: "http://img.b2bpic.net/free-photo/smiling-nurse-hospital_23-2151997622.jpg", alt: "Nurse smiling" },
+              { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Du4bEh9qbNp2VT2H1Cwwbz7STt/uploaded-1779173495008-0na8op2f.jpg", alt: "Medical staff smiling" },
+              { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Du4bEh9qbNp2VT2H1Cwwbz7STt/uploaded-1779173495008-y6ztkatt.jpg", alt: "Nurse smiling" },
               { src: "http://img.b2bpic.net/free-photo/portrait-smiling-male-doctor_171337-1485.jpg", alt: "Doctor smiling" },
               { src: "http://img.b2bpic.net/free-photo/male-dentist-looking-camera_23-2147862094.jpg", alt: "Dentist portrait" },
               { src: "http://img.b2bpic.net/free-photo/goodlooking-male-dentist-standing-dental-office_651396-3120.jpg", alt: "Dentist in office" },
