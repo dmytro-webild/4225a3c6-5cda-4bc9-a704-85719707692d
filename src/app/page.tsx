@@ -13,6 +13,8 @@ import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
 import { Award, CheckCircle, Clock, Shield, Sparkles, ShieldCheck } from "lucide-react";
 
+const WHATSAPP_LINK = "https://wa.me/1234567890?text=I%20would%20like%20to%20book%20a%20dental%20appointment.";
+
 export default function LandingPage() {
   return (
     <ThemeProvider
@@ -45,6 +47,7 @@ export default function LandingPage() {
             background={{ variant: "gradient-bars" }}
             title="Your Smile Deserves Expert Care"
             description="Providing comprehensive dental care from routine cleanings to advanced implant surgery in a professional, comfortable environment."
+            buttons={[{ text: "Book Now", href: WHATSAPP_LINK }]}
             kpis={[
               { value: "10k+", label: "Smiles Restored" },
               { value: "15+", label: "Years Experience" },
@@ -102,6 +105,7 @@ export default function LandingPage() {
             ]}
             title="Comprehensive Dental Services"
             description="We specialize in modern dental treatments tailored to your unique needs, ensuring comfort and long-term oral health."
+            buttons={[{ text: "Schedule Consult", href: WHATSAPP_LINK }]}
           />
         </div>
 
@@ -129,8 +133,6 @@ export default function LandingPage() {
               { id: "t1", name: "Sarah Johnson", date: "2023", title: "Excellent service", quote: "Fantastic service. Had a restoration done and couldn't be happier.", tag: "Restoration", avatarSrc: "http://img.b2bpic.net/free-photo/front-view-smiley-doctor-wearing-white-coat_23-2149844582.jpg", imageSrc: "http://img.b2bpic.net/free-photo/close-up-dentist-using-instruments_23-2151053276.jpg" },
               { id: "t2", name: "Robson Martins", date: "2023", title: "Professional and efficient", quote: "Great service from the moment I arrived. Highly efficient professionals.", tag: "Implants", avatarSrc: "http://img.b2bpic.net/free-photo/happy-doctor-holding-medical-paperwork-while-communicating-with-patient-medical-appointment-hospital_637285-1422.jpg", imageSrc: "http://img.b2bpic.net/free-photo/dentist-treats-childs-tooth-using-rubber-dam-installing-filling-tooth_169016-67007.jpg" },
               { id: "t3", name: "Emily Rodriguez", date: "2024", title: "Highly recommended", quote: "Exceptional care and very welcoming environment.", tag: "General Care", avatarSrc: "http://img.b2bpic.net/free-photo/expressive-young-girl-posing-studio_176474-65923.jpg", imageSrc: "http://img.b2bpic.net/free-photo/young-pretty-woman-outdoor_624325-782.jpg" },
-              { id: "t4", name: "David Kim", date: "2024", title: "Excellent result", quote: "Everything was perfect, highly professional clinic.", tag: "Treatment", avatarSrc: "http://img.b2bpic.net/free-photo/handsome-man-looking-camera-leaning-fist_23-2148179008.jpg", imageSrc: "http://img.b2bpic.net/free-photo/beautiful-girl-sitting-dentist-s-office_1157-20957.jpg" },
-              { id: "t5", name: "Anna Smith", date: "2024", title: "Best experience", quote: "The team made me feel completely at ease throughout my entire procedure.", tag: "General", avatarSrc: "http://img.b2bpic.net/free-photo/confident-young-woman-doctor-with-toothy-smile-generated-by-ai_188544-29156.jpg", imageSrc: "http://img.b2bpic.net/free-photo/happy-young-female-dentist_23-2148396137.jpg" },
             ]}
             title="What Our Patients Say"
             description="Experience excellence through the words of those who trust us with their smiles."
@@ -155,13 +157,15 @@ export default function LandingPage() {
           <ContactSplitForm
             useInvertedBackground={true}
             title="Book Your Appointment"
-            description="Ready to improve your smile? Contact us today to schedule your consultation."
+            description="Ready to improve your smile? You can contact us here or book instantly via WhatsApp."
             inputs={[
               { name: "name", type: "text", placeholder: "Your Name", required: true },
               { name: "email", type: "email", placeholder: "Email Address", required: true },
             ]}
             textarea={{ name: "message", placeholder: "How can we help?", rows: 4 }}
             imageSrc="http://img.b2bpic.net/free-photo/beautiful-spacious-office-dentist_8353-9976.jpg"
+            buttonText="WhatsApp Appointment"
+            onSubmit={() => window.open(WHATSAPP_LINK, '_blank')}
           />
         </div>
 
@@ -169,7 +173,7 @@ export default function LandingPage() {
           <FooterLogoEmphasis
             columns={[
               { items: [{ label: "Treatments", href: "#features" }, { label: "About Us", href: "#" }, { label: "Blog", href: "#" }] },
-              { items: [{ label: "Contact", href: "#contact" }, { label: "Privacy", href: "#" }, { label: "Terms", href: "#" }] },
+              { items: [{ label: "WhatsApp", href: WHATSAPP_LINK }, { label: "Privacy", href: "#" }, { label: "Terms", href: "#" }] },
             ]}
             logoText="DentalClinics"
           />
